@@ -1,0 +1,8 @@
+#show all kittens
+<h1>All the kittens</h1>
+<% @kittens.each do |kitten| %>
+  <p><%= kitten.name %></p>
+    <p><%= kitten.age %></p>
+    <p><%= kitten.cuteness %></p>
+    <p><%= kitten.softness %></p>
+<% end %>
