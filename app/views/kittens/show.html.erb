@@ -1,0 +1,7 @@
+
+<h1>Kittens name: <%= @kitten[:name] %></h1>
+<p>Age: <%= @kitten[:age] %></p>
+<p>Cuteness level: <%= @kitten[:cuteness] %></p>
+<p>Softness level: <%= @kitten[:softness] %></p>
+<%= link_to "Edit", edit_kitten_path(@kitten) %> |
+<%= link_to "Back", kittens_path %>

@@ -2,7 +2,11 @@
 <h1>All the kittens</h1>
 <% @kittens.each do |kitten| %>
   <p><%= kitten.name %></p>
-    <p><%= kitten.age %></p>
-    <p><%= kitten.cuteness %></p>
-    <p><%= kitten.softness %></p>
-<% end %>
+  <p><%= kitten.age %></p>
+  <p><%= kitten.cuteness %></p>
+  <p><%= kitten.softness %></p>
+  <%= link_to "Show", kitten_path(kitten) %> |
+<% end %><br>
+<div>
+<br><%= link_to "New Kitten", new_kitten_path %>
+</div>
